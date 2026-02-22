@@ -33,7 +33,7 @@ def calcular_hurst(ts):
 @st.cache_data(ttl=600)
 def analyze_asset(ticker):
     try:
-        df = yf.download(ticker, period='20d', interval='4h', progress=False)
+        df = yf.download(ticker, period='10d', interval='1h', progress=False)
         if df.empty: return None
         if isinstance(df.columns, pd.MultiIndex): df.columns = df.columns.get_level_values(0)
         df['Ret'] = df['Close'].pct_change()
