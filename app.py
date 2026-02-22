@@ -8,7 +8,7 @@ import plotly.express as px
 from datetime import datetime
 
 # --- 1. CONFIGURACIÓN ---
-st.set_page_config(page_title="JDetector- Institutional Edge", layout="wide")
+st.set_page_config(page_title="money flow", layout="wide")
 
 st.markdown("""
     <style>
